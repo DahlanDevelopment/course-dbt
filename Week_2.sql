@@ -23,4 +23,7 @@ SUM(has_one_purchases) AS one_purchase
 , SUM(has_two_plus_purchases) AS two_plus_purchases
 , COUNT(DISTINCT user_id) AS num_users_w_purchase
 , DIV0(two_plus_purchases, num_users_w_purchase) as repeat_rate
-FROM users_bucket
+FROM users_bucket;
+
+
+select * from DEV_DB.DBT_SHARIFFDAHLAN.INT_SESSION_EVENTS_AGG
